@@ -17,7 +17,7 @@ class ContactController extends Controller
 
     public function form(Request $request)
     {
-        // ddd($request->all());
+        //ddd($request->all());
     }
 
 }

@@ -1,5 +1,9 @@
 @extends('layouts.site')
 
+@section('title')
+    {{ 'Produtos' }}
+@endsection
+
 @section('content')
     <header class="common-header">
         <div class="header-wrapper">
@@ -14,7 +18,7 @@
             <article class="card__product">
                 <a href="products-detail.php">
                     <div class="card__cover">
-                        <img src="{{asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg')}}">
+                        <img src="{{ asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg') }}">
                     </div>
                     <header class="card__product-header">
                         <h2 class="title-medium">Tumultumque</h2>
@@ -25,7 +29,7 @@
             <article class="card__product">
                 <a href="products-detail.php">
                     <div class="card__cover">
-                        <img src="{{asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg')}}">
+                        <img src="{{ asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg') }}">
                     </div>
                     <header class="card__product-header">
                         <h2 class="title-medium">Mineralis</h2>
@@ -36,7 +40,7 @@
             <article class="card__product">
                 <a href="products-detail.php">
                     <div class="card__cover">
-                        <img src="{{asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg')}}">
+                        <img src="{{ asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg') }}">
                     </div>
                     <header class="card__product-header">
                         <h2 class="title-medium">Historia</h2>
@@ -47,7 +51,7 @@
             <article class="card__product">
                 <a href="products-detail.php">
                     <div class="card__cover">
-                        <img src="{{asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg')}}">
+                        <img src="{{ asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg') }}">
                     </div>
                     <header class="card__product-header">
                         <h2 class="title-medium">Classis</h2>
@@ -59,7 +63,7 @@
             <article class="card__product">
                 <a href="products-detail.php">
                     <div class="card__cover">
-                        <img src="{{asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg')}}">
+                        <img src="{{ asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg') }}">
                     </div>
                     <header class="card__product-header">
                         <h2 class="title-medium">Imperium</h2>
@@ -70,7 +74,7 @@
             <article class="card__product">
                 <a href="products-detail.php">
                     <div class="card__cover">
-                        <img src="{{asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg')}}">
+                        <img src="{{ asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg') }}">
                     </div>
                     <header class="card__product-header">
                         <h2 class="title-medium">Experientia</h2>
@@ -81,7 +85,7 @@
             <article class="card__product">
                 <a href="products-detail.php">
                     <div class="card__cover">
-                        <img src="{{asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg')}}">
+                        <img src="{{ asset('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg') }}">
                     </div>
                     <header class="card__product-header">
                         <h2 class="title-medium">Lactea</h2>

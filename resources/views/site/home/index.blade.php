@@ -1,5 +1,9 @@
 @extends('layouts.site')
 
+@section('title')
+{{ 'Página Inícial' }}
+@endsection
+
 @section('content')
 <header>
     <div class="hero">

@@ -1,5 +1,9 @@
 @extends('layouts.site')
 
+@section('title')
+{{ 'Blog' }}
+@endsection
+
 @section('content')
 
     <header class="common-header">

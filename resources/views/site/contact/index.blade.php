@@ -1,5 +1,9 @@
 @extends('layouts.site')
 
+@section('title')
+{{ 'Contato' }}
+@endsection
+
 @section('content')
     <div class="gray-background">
         <section class="contact__block contact-wrapper">

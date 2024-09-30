@@ -9,6 +9,7 @@ use App\Notifications\NewContact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Notification;
 
+
 class ContactController extends Controller
 {
     public function index()

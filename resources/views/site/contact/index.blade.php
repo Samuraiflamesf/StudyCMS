@@ -11,21 +11,33 @@
             <p>Hercle, abnoba dexter!, racana! Hippotoxota noceres, tanquam gratis luna. Lotus, noster lactas rare captis de
                 fortis, audax omnia.</p>
             <section class="contact__options">
-
                 <form class="contact__form" action="{{ route('site.contact.form') }}" method="POST">
                     @csrf
                     <label for="text">Nome completo</label>
-                    <input id="text" name="name" type="text" required tabindex="1"
-                        placeholder="Ex: José da Silva" autofocus>
+                    @error('name')
+                    <label for="text">{{ $message }}</label>
+                    @enderror
+                    <input id="text" name="name" type="text" tabindex="1" placeholder="Ex: José da Silva"
+                        autofocus value="{{ old('name') }}">
 
                     <label for="text">Email</label>
-                    <input id="email" name="email" type="email" required tabindex="2"
-                        placeholder="Ex: email@email.com.br">
+                    @error('email')
+                        <label for="text">{{ $message }}</label>
+                    @enderror
+                    <input id="email" name="email" type="email" tabindex="2" placeholder="Ex: email@email.com.br"
+                        value="{{ old('email') }}">
 
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" required tabindex="3" cols="20" rows="4"
-                        placeholder="Digite aqui..."></textarea>
+                        <label for="message">Mensagem</label>
+                    @error('message')
+                        <label for="text">{{ $message }}</label>
+                    @enderror
+                    <textarea id="message" name="message" tabindex="3" cols="20" rows="4" placeholder="Digite aqui...">{{ old('message') }}</textarea>
 
+                    @if (@session('message'))
+                        <p for="text">
+                            {{ session('message') }}
+                        </p>
+                    @endif
                     <button class="button button_primary" type="submit">Enviar mensagem</button>
                 </form>
 

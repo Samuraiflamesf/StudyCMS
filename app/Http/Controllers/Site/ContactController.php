@@ -1,26 +1,31 @@
 <?php
 
 namespace App\Http\Controllers\Site;
+
 use App\Models\Contact;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Http\Requests\ContactFormRequest;
+use App\Notifications\NewContact;
+use Illuminate\Support\Facades\Notification;
+
 
 class ContactController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     * @return \Illuminate\Http\Client\Response
-     */
     public function index()
     {
         return view('site.contact.index');
     }
 
-    public function form(Request $request)
+    public function form(ContactFormRequest $request)
     {
+        // Criação do contato
         $contact = Contact::create($request->all());
 
-        dump($request->all());
+        // Notificar o usuário com a nova instância de contato
+        Notification::route('mail', config('mail.from.address'))->notify(new NewContact($contact));
+        // Display a success toast with no title
+        toastr()->success('O contato foi enviado com sucesso!');
+        return back();
     }
 }

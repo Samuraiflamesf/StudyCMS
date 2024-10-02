@@ -7,7 +7,7 @@
 @section('content')
     <header class="common-header">
         <div class="header-wrapper">
-            <h1 class="title-large">With apples drink teriyaki. </h1>
+            <h1 class="title-large">Nossos Produtos</h1>
         </div>
         <div class="pattern__header"></div>
     </header>

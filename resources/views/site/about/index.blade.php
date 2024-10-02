@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
 @section('title')
-    {{ 'Sobre Mim' }}
+    {{ 'Sobre Nós' }}
 @endsection
 
 @section('content')
@@ -12,15 +12,10 @@
             <!-- Conteudo sobre a empresa -->
             <section class="about__content">
                 <section class="about__history">
-                    <h1 class="display-medium">Cum era ire, omnes fermiumes anhelare clemens, flavum caculaes.</h1>
-                    <p><strong>Brema :</strong>Eheu, barbatus consilium! Rumor emeritis mensa est. Sunt lunaes imitari
-                        talis, flavum eraes. Sunt lumenes carpseris talis, superbus capioes. </p>
-                    <p><strong>Sala </strong>Naviss sunt classiss de altus racana. Cum frondator manducare, omnes cottaes
-                        quaestio festus, salvus adiuratores. </p>
-                    <p><strong>Antverpia :</strong>Cur axona nocere? Cum species favere, omnes solitudoes perdere bi-color,
-                        peritus vortexes. Est albus silva, cesaris.</p>
+                    <h1 class="display-medium">Sobre Nós</h1>
+                    <p>No {{ config('app.name') }}, somos apaixonados por tecnologia e inovação. Nossa equipe trabalha para criar soluções que realmente façam a diferença no seu dia a dia. Com uma abordagem criativa e prática, buscamos sempre entregar o melhor resultado em cada projeto. Conheça mais sobre nossa história e como podemos ajudar a impulsionar o seu negócio.</p>
                 </section>
-                <p>One must emerge the explosion of the conclusion in order to meet the wind of inner uniqueness.</p>
+                <p>Nossos patrocinadores:</p>
 
                 <section class="about__clients">
                     <div class="about__clients__logos">

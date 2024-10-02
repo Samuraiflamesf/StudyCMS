@@ -7,9 +7,8 @@
 @section('content')
     <div class="gray-background">
         <section class="contact__block contact-wrapper">
-            <h1 class="display-medium">Cur gemna ire? </h1>
-            <p>Hercle, abnoba dexter!, racana! Hippotoxota noceres, tanquam gratis luna. Lotus, noster lactas rare captis de
-                fortis, audax omnia.</p>
+            <h1 class="display-medium">Entre em Contato</h1>
+            <p>Estamos aqui para ajudar! Preencha o formulário abaixo ou nos envie um e-mail. Nossa equipe está pronta para responder às suas perguntas o mais rápido possível.</p>
             <section class="contact__options">
                 <form class="contact__form" action="{{ route('site.contact.form') }}" method="POST">
                     @csrf
@@ -55,7 +54,7 @@
                             <img src="{{ asset('images/mail-contact-icon.svg') }}" alt="">
                             <h3 class="title-small">Contato por email</h3>
                         </div>
-                        <a title="Clique no email para enviar email automatico" href="mailto:hortus ">finis </a>
+                        <a title="Clique no email para enviar email automatico" href="mailto:hortus ">teste@mail.com </a>
                     </div>
 
                     <div>
@@ -71,10 +70,7 @@
                             CEP: 14444-020
                         </a>
                     </div>
-                    <section class="contact__infos__social-media">
-                        <a href="https://www.facebook.com/fertgaia/" target="_blank">Facebook /</a>
-                        <a href="javascript:;"> YouTube</a>
-                    </section>
+
                 </div>
             </section>
         </section>
